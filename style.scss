@@ -867,3 +867,76 @@ input::placeholder {
     align-items: center;
     margin-bottom: 45px;
 }
+
+.checkout {
+
+    position: relative;
+}
+
+.summary-product {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.checkout__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 262px;
+    height: 440px;
+    background-color: #ffffff;
+    border-radius: 5px;
+
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 20px;
+    padding-top: 21px;
+}
+
+.product-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.total-text {
+    margin-bottom: 33px;
+    font-family: $font_fam;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $black_color;
+}
+
+.close-checkout {
+    color: #c0c0c0;
+    align-items: center;
+    display: flex;
+}
+
+.fa-circle-xmark:hover {
+    color: $black_color;
+}
+
+
+.check-out-price {
+    font-family: $font_fam;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $pink_color;
+}
+
+.check-out-heading {
+    font-family: $font_fam;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $black_color;
+}

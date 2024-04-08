@@ -823,4 +823,74 @@ input::placeholder {
   display: flex;
   align-items: center;
   margin-bottom: 45px;
+}
+
+.checkout {
+  position: relative;
+}
+
+.summary-product {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.checkout__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 262px;
+  height: 440px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 20px;
+  padding-top: 21px;
+}
+
+.product-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.total-text {
+  margin-bottom: 33px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.close-checkout {
+  color: #c0c0c0;
+  align-items: center;
+  display: flex;
+}
+
+.fa-circle-xmark:hover {
+  color: #222222;
+}
+
+.check-out-price {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #F16D7F;
+}
+
+.check-out-heading {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
 }/*# sourceMappingURL=style.css.map */
