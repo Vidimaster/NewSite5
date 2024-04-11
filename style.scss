@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+
+
+a {
+    text-decoration: none;
+}
+
+
 .navbar {
     background-color: white;
 
@@ -948,7 +955,10 @@ input::placeholder {
     font-weight: 700;
     text-transform: uppercase;
     color: $black_color;
+
 }
+
+
 
 .mega-box {
     background-color: #ffffff;
@@ -1041,7 +1051,7 @@ input::placeholder {
     background-color: #f8f3f4;
     align-items: center;
     display: flex;
-    gap: 900px;
+    gap: 750px;
     justify-content: center;
 }
 
