@@ -1041,6 +1041,7 @@ ul.breadcrumb-single li a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
 }
 
 .carousel_img img {
@@ -1180,7 +1181,7 @@ ul.breadcrumb-single li a:hover {
   background-color: rgba(42, 42, 42, 0.14);
   position: absolute;
   left: 0px;
-  bottom: 47px;
+  bottom: 50%;
 }
 .carousel-left-button.carousel-left-button:hover {
   background-color: rgb(42, 42, 42);
@@ -1195,7 +1196,7 @@ ul.breadcrumb-single li a:hover {
   background-color: rgba(42, 42, 42, 0.14);
   position: absolute;
   right: 0px;
-  bottom: 47px;
+  bottom: 50%;
   transform: scaleX(-1);
 }
 .carousel-right-button.carousel-right-button:hover {
