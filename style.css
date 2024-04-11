@@ -971,6 +971,7 @@ input::placeholder {
 
 .menu-list:hover .mega-box {
   display: flex;
+  z-index: 999;
 }
 
 .link-mega-menu {
@@ -978,8 +979,7 @@ input::placeholder {
 }
 
 .last:hover .mega-box {
-  right: 550px;
-  left: auto;
+  right: 335px;
 }
 
 .last:hover .mega-box::before {
