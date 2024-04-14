@@ -1482,7 +1482,23 @@ ul.breadcrumb-product li+li:before {
     height: 6px;
     background-color: #f0f0f0;
     border-radius: 3px;
+    color: $pink_color;
 }
+
+.productprice[type="range"]::-moz-range-track {
+    background-color: #f3f3f3;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+.productprice[type="range"]::-moz-range-thumb {
+    border: none;
+    border-radius: 50%;
+    background-color: $pink_color;
+    height: 1rem;
+    width: 1rem;
+}
+
 
 .container-right-product .grid-feature {
     grid-template-columns: repeat(3, 263px);
