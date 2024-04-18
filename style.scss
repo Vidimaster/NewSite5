@@ -161,11 +161,10 @@ a {
 
 
 .grid-feature {
+    display: flex;
 
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3% 2%;
+    flex-wrap: wrap;
+    gap: 26px;
     justify-content: center;
 
     margin: 0 auto;
@@ -173,6 +172,32 @@ a {
     width: 100%;
     margin-top: 87px;
     margin-bottom: 79px;
+}
+
+
+
+@supports (display: grid) {
+    .grid-feature {
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3% 2%;
+        justify-content: center;
+
+        margin: 0 auto;
+
+        width: 100%;
+        margin-top: 87px;
+        margin-bottom: 79px;
+    }
+
+    .container-right-product .grid-feature {
+        grid-template-columns: repeat(3, 263px);
+        gap: 36px 30px;
+
+    }
+
 }
 
 .logo-brand {
@@ -420,6 +445,7 @@ ul.breadcrumb li a:hover {
         justify-content: center;
         align-items: center;
         display: flex;
+        cursor: pointer;
     }
 
     &.continue {
@@ -1535,11 +1561,7 @@ ul.breadcrumb-product li+li:before {
 }
 
 
-.container-right-product .grid-feature {
-    grid-template-columns: repeat(3, 263px);
-    gap: 36px 30px;
 
-}
 
 .category-list {
     font-family: $font_fam;
@@ -1781,6 +1803,11 @@ ul.breadcrumb-product li+li:before {
         width: 390px;
         height: 45px;
         margin-bottom: 23px;
+        padding-left: 10px;
+    }
+
+    .checkout-input::placeholder {
+        opacity: 0.5;
     }
 
     .forgot-pass-container {

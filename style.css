@@ -142,9 +142,9 @@ a {
 }
 
 .grid-feature {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3% 2%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
   justify-content: center;
   margin: 0 auto;
   width: 100%;
@@ -152,6 +152,22 @@ a {
   margin-bottom: 79px;
 }
 
+@supports (display: grid) {
+  .grid-feature {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3% 2%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 87px;
+    margin-bottom: 79px;
+  }
+  .container-right-product .grid-feature {
+    grid-template-columns: repeat(3, 263px);
+    gap: 36px 30px;
+  }
+}
 .logo-brand, .letter_d {
   font-family: "Lato", sans-serif;
   font-size: 27px;
@@ -388,6 +404,7 @@ ul.breadcrumb li a:hover {
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 .button.continue {
   background-color: #ffffff;
@@ -1420,11 +1437,6 @@ ul.breadcrumb-product li + li:before {
   width: 1rem;
 }
 
-.container-right-product .grid-feature {
-  grid-template-columns: repeat(3, 263px);
-  gap: 36px 30px;
-}
-
 .category-list {
   font-family: "Lato", sans-serif;
   display: block;
@@ -1637,6 +1649,13 @@ ul.breadcrumb-product li + li:before {
   width: 390px;
   height: 45px;
   margin-bottom: 23px;
+  padding-left: 10px;
+}
+.content-checkout .checkout-input::-moz-placeholder {
+  opacity: 0.5;
+}
+.content-checkout .checkout-input::placeholder {
+  opacity: 0.5;
 }
 .content-checkout .forgot-pass-container {
   display: flex;
