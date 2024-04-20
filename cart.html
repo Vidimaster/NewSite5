@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/217b203e10.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="screen.css">
-    <title>Checkout</title>
+    <title>Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -546,82 +546,141 @@
         </nav>
     </div>
 
-    <div class="content-checkout">
+    <div class="cart-content">
+        <div class="cart-content-header">
+            <div class="container-left">
+                <h3 class="content-header-text">Product Details</h3>
+            </div>
+            <div class="container-right">
+                <h3 class="content-header-text">unite Price</h3>
+                <h3 class="content-header-text">Quantity</h3>
+                <h3 class="content-header-text">shipping</h3>
+                <h3 class="content-header-text">Subtotal</h3>
+                <h3 class="content-header-text">ACTION</h3>
+            </div>
+        </div>
 
-        <details class="checkout-big" open>
-            <summary>
-                <h3 class="checkout-header">01. Shipping Adress</h3>
-            </summary>
-            <div class="container">
-                <div class="container-left__checkout-big">
-                    <h4 class="checkout-header subheader">Check as a guest or register</h4>
-                    <p class="checkout-text">Register with us for future convenience</p>
-                    <div class="checkout-header subheader">
-                        <input type="radio" id="huey" name="drone" value="huey">
-                        <label for="huey">checkout as guest</label>
+        <div class="cart-content-products">
+            <div class="container-left"><a href="single_page.html">
+                    <div class="picture-text">
+                        <img src="img/cart/cart_1.png" alt="product1">
+                        <div class="picture-text-column">
+                            <p class="content-header-text">Mango People T-shirt</p>
+                            <p class="content-para-text">Color: Red
+                            </p>
+                            <p class="content-para-text">Size: Xll</p>
+                        </div>
                     </div>
+                </a>
+            </div>
+            <div class="container-right">
+                <h4 class="product-text">$150</h4>
+                <input class="cart-product" type="text" id="name1" name="name" required minlength="1" maxlength="2"
+                    size="20" placeholder="2">
 
-                    <div class="checkout-header subheader">
-                        <input type="radio" id="huey2" name="drone" value="huey" checked>
-                        <label for="huey">register</label>
-                    </div>
-                    <h4 class="checkout-header subheader">register and save time!</h4>
-                    <p class="checkout-text">Register with us for future convenience</p>
-                    <p class="checkout-text"><i class="fa fa-angle-double-right"></i>Fast and easy checkout</p>
-                    <p class="checkout-text"><i class="fa fa-angle-double-right"></i>Easy access to your order history
-                        and status</p>
-
-                    <a href="" class="button continue">Continue</a>
-                </div>
-
-
-                <div class="container-right__checkout-big">
-
-                    <h4 class="checkout-header subheader">Already registed?</h4>
-                    <p class="checkout-text">Please log in below</p>
-                    <h4 class="checkout-header subheader">EMAIL ADDRESS<span
-                            style="color: red; font-size: 17px;">*</span></h4>
-
-
-                    <input class="checkout-input" type="text" id="name" name="name" required minlength="4"
-                        maxlength="18" size="20" placeholder="email@example.com">
-                    <h4 class="checkout-header subheader">PASSWORD<span style="color: red; font-size: 17px;">*</span>
-                    </h4>
-                    <input class="checkout-input" type="password" id="pass" name="pass" required minlength="4"
-                        maxlength="18" size="20" />
-                    <p class="checkout-text reqfield">* Required Fileds</p>
-                    <div class="forgot-pass-container"> <a href="" class="button continue">Log in</a>
-                        <a href="" class="forgot-text">Forgot Password ?</a>
-                    </div>
-
+                <h4 class="product-text">FREE</h4>
+                <h4 class="product-text">$300</h4>
+                <div class="close-checkout">
+                    <i class="fa fa-solid fa-circle-xmark"></i>
                 </div>
             </div>
-        </details>
-        <details class="checkout-big">
-            <summary>
-                <h3 class="checkout-header">02. BILLING INFORMATION</h3>
-            </summary>
-        </details>
-        <details class="checkout-big">
-            <summary>
-                <h3 class="checkout-header">03. SHIPPING INFORMATION</h3>
-            </summary>
-        </details>
-        <details class="checkout-big">
-            <summary>
-                <h3 class="checkout-header">04. SHIPPING METHOD</h3>
-            </summary>
-        </details>
-        <details class="checkout-big">
-            <summary>
-                <h3 class="checkout-header">05. PAYMENT METHOD</h3>
-            </summary>
-        </details>
-        <details class="checkout-big">
-            <summary>
-                <h3 class="checkout-header">06. ORDER REVIEW</h3>
-            </summary>
-        </details>
+        </div>
+
+        <div class="cart-content-products">
+            <div class="container-left"><a href="single_page.html">
+                    <div class="picture-text">
+                        <img src="img/cart/cart_2.png" alt="product2">
+                        <div class="picture-text-column">
+                            <p class="content-header-text">Mango People T-shirt</p>
+                            <p class="content-para-text">Color: Red
+                            </p>
+                            <p class="content-para-text">Size: Xll</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="container-right">
+                <h4 class="product-text">$150</h4>
+                <input class="cart-product" type="text" id="name1" name="name" required minlength="1" maxlength="2"
+                    size="20" placeholder="2">
+
+                <h4 class="product-text">FREE</h4>
+                <h4 class="product-text">$300</h4>
+                <div class="close-checkout">
+                    <i class="fa fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-content-products">
+            <div class="container-left"><a href="single_page.html">
+                    <div class="picture-text">
+                        <img src="img/cart/cart_3.png" alt="product3">
+                        <div class="picture-text-column">
+                            <p class="content-header-text">Mango People T-shirt</p>
+                            <p class="content-para-text">Color: Red
+                            </p>
+                            <p class="content-para-text">Size: Xll</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="container-right">
+                <h4 class="product-text">$150</h4>
+                <input class="cart-product" type="text" id="name1" name="name" required minlength="1" maxlength="2"
+                    size="20" placeholder="2">
+
+                <h4 class="product-text">FREE</h4>
+                <h4 class="product-text">$300</h4>
+                <div class="close-checkout">
+                    <i class="fa fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-cart-content">
+        <div class="container-left"><a href="" class="button continue" style="margin-top: 0;">cLEAR SHOPPING CART</a>
+        </div>
+        <div class="container-right"><a href="" class="button continue" style="margin-top: 0;">cONTINUE sHOPPING</a>
+        </div>
+    </div>
+    <form>
+        <div class="container-cart-content">
+
+            <div class="column-cart-content">
+                <h3 class="column-cart-content-header">Shipping Adress</h3>
+                <input class="cart-product" type="text" id="add1" name="name" required minlength="1" maxlength="18"
+                    size="20" placeholder="Bangladesh">
+                <input class="cart-product" type="text" id="add1" name="name" required minlength="1" maxlength="18"
+                    size="20" placeholder="State">
+                <input class="cart-product" type="text" id="add1" name="name" required minlength="1" maxlength="18"
+                    size="20" placeholder="Postcode / Zip">
+            </div>
+
+            <div class="column-cart-content">
+                <h3 class="column-cart-content-header">coupon discount</h3>
+                <p class="cart-sub-text">Enter your coupon code if you have one</p>
+                <input class="cart-product" type="text" id="add1" name="name" required minlength="1" maxlength="18"
+                    size="20" placeholder="State">
+                <div style="margin-top: 35px; margin-bottom: 79px; ">
+                    <a style="margin-left: 0" href="" class="button quote">Apply coupon</a>
+                </div>
+
+            </div>
+            <div class="column-cart-content">
+                <p class="cart-sub-text">Sub total $900</p>
+                <h3 class="column-cart-content-header" style="margin-top: 14px;">GRAND TOTAL <span
+                        style="color: #f16d7f;">$900</span></h3>
+                <hr style="height: 1px;color: #e2e2e2; margin-top: 22px;">
+                <a href="" class="button coupon">proceed to checkout</a>
+            </div>
+
+
+        </div>
+    </form>
+    <div style="margin-top: 25px; margin-bottom: 79px;">
+        <a href="" class="button quote">get a quote</a>
     </div>
     <footer>
         <div class="subscribe center-elements">
